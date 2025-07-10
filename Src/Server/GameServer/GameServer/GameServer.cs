@@ -18,17 +18,31 @@ namespace GameServer
     {
         Thread thread;
         bool running = false;
+        NetService network;
+        
         public bool Init()
         {
+            network = new NetService();
+            network.Init(8000);
             DBService.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));
+
+
+
+            HelloWorldServices.Instance.Init();
+
             return true;
         }
 
         public void Start()
         {
+            HelloWorldServices.Instance.Start();
+
+
+
             running = true;
             thread.Start();
+            network.Start();
         }
 
 
@@ -36,6 +50,7 @@ namespace GameServer
         {
             running = false;
             thread.Join();
+            network.Stop();
         }
 
         public void Update()
