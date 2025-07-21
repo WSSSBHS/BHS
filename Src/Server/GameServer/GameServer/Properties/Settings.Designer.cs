@@ -46,5 +46,17 @@ namespace GameServer.Properties {
                 this["ServerPort"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int x {
+            get {
+                return ((int)(this["x"]));
+            }
+            set {
+                this["x"] = value;
+            }
+        }
     }
 }

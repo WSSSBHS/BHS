@@ -11,11 +11,13 @@ using System.Threading;
 
 using Network;
 using GameServer.Services;
+using GameServer.Managers;
 
 namespace GameServer
 {
     class GameServer
     {
+        int X = Properties.Settings.Default.ServerPort;
         Thread thread;
         bool running = false;
         NetService network;
@@ -23,13 +25,13 @@ namespace GameServer
         public bool Init()
         {
             network = new NetService();
-            network.Init(8000);
+            network.Init(X);
             DBService.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));
-
-
-
+            DataManager.Instance.Load();
+            MapManager.Instance.Init();
             HelloWorldServices.Instance.Init();
+            UserService.Instance.Init();
 
             return true;
         }

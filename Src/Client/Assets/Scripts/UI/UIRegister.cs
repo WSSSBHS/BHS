@@ -14,6 +14,7 @@ public class UIRegister : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
         UserService.Instance.OnRegister = this.OnRegister;
 
     }

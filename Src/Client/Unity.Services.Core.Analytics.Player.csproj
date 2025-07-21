@@ -343,12 +343,24 @@
       <HintPath>Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Tracker.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="I18N">
+      <HintPath>Assets\I18N.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>Assets\References\log4net.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="I18N.CJK">
+      <HintPath>Assets\I18N.CJK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="I18N.West">
+      <HintPath>Assets\I18N.West.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="protobuf-net">

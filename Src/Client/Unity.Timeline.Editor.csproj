@@ -179,8 +179,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Recording\TimelineRecordingContextualResponder.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\inspectors\MarkerInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\treeview\TimelineTreeViewGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\DirectorStyles.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\treeview\ItemGui\TimelineMarkerClusterGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\DirectorStyles.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Actions\MarkerAction.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Utilities\Clipboard.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Utilities\TimelineKeyboardNavigation.cs" />
@@ -300,8 +300,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Signals\SignalAssetInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Manipulators\EditModeInputHandler.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\inspectors\ClipInspector\ClipInspectorSelectionInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Window\TimelineWindow_PlayRange.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\inspectors\TimelineProjectSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Window\TimelineWindow_PlayRange.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Window\TimelineWindow_StateChange.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Activation\ActivationTrackEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Utilities\Scopes\GUIViewportScope.cs" />
@@ -706,6 +706,10 @@
       <HintPath>Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="I18N">
+      <HintPath>Assets\I18N.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.6.0\Lib\Editor\unityplastic.dll</HintPath>
       <Private>False</Private>
@@ -722,8 +726,16 @@
       <HintPath>Assets\References\log4net.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="I18N.CJK">
+      <HintPath>Assets\I18N.CJK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="I18N.West">
+      <HintPath>Assets\I18N.West.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="protobuf-net">
